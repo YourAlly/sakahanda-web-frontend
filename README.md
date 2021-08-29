@@ -4,6 +4,9 @@
 2. Explanation ng NPM
     - https://www.youtube.com/watch?v=P3aKRdUyr0s
 
+3. Install tailwind, type sa command line (make sure you are within the project folder, or vscode terminal ang gamit).
+    - npm install
+
 3. To learn tailwind, paano mag add ng custom designs and stuffs sa project, refer sa documentation
     - https://tailwindcss.com/docs
     - https://tailwindcomponents.com/cheatsheet/
@@ -17,3 +20,5 @@
 
 5. (If gets na ang pagadd ng custom styles) To build tailwind, type sa command line (make sure you are within the project folder, or vscode terminal ang gamit)
     - npm run tw:build
+
+7. Files to work around like yung compiled css files, assets at pages ay nasa folder 'public'.
