@@ -1,0 +1,25 @@
+{
+  "name": "sakahanda-frontend-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss -i ./src/css/app.css -o ./public/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothyryeyn/sakahanda-frontend-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timothyryeyn/sakahanda-frontend-web/issues"
+  },
+  "homepage": "https://github.com/timothyryeyn/sakahanda-frontend-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.8"
+  }
+}

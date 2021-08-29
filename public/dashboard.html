@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\app.css">
+        <title>Document</title>
+    </head>
+
+    <body class="w-screen h-screen overflow-hidden bg-light-grayish-blue">
+        <!-- Top Nav -->
+        <nav class="fixed z-10 flex w-full py-2 bg-white shadow-md h-14 px-7 font-nunito">
+            <!-- left side -->
+            <div class="flex items-center justify-between w-2/4">
+                <!-- Logo -->
+                <section class="flex flex-row text-lg font-extrabold text-dark-moderate-cyan">
+                    <img src="assets\sakahanda-logo.png" alt="sakahanda logo" class="w-6 mr-3 h-7">
+                    SAKAHANDA
+                </section>
+                <!-- Location and weather  -->
+                <section class="flex flex-row justify-between w-2/4">
+                    <div>
+                        <div class="flex flex-row items-center text-xs font-extrabold text-dark-moderate-cyan">
+                            <img src="assets\location.svg" alt="location icon" class="w-2 h-3 mr-2">
+                            San Miguel, Bulacan
+                        </div>
+                        <div class="space-x-3 text-2xs text-very-dark-gray">
+                            <time>Thursday, July 29, 2021</time>
+                            <time>9:45 AM</time>
+                        </div>
+                    </div>
+                    <!-- Weather -->
+                    <div class="flex items-center">
+                        <img src="assets\u_cloud-sun.svg" alt="location icon" class="mr-3 w-7 h-7">
+                        <div class="">
+                            <div class="flex flex-row text-xs font-extrabold text-dark-moderate-cyan">
+                                18°C Clear Skies
+                            </div>
+                            <div class="flex space-x-2 text-2xs text-very-dark-gray">
+                                <div class="flex flex-row items-center">
+                                    <img src="assets\arrow-up.svg" alt="arrow up" class="h-2 mr-1">
+                                    18°C
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img src="assets\arrow-up.svg" alt="arrow up" class="h-2 mr-1">
+                                    18°C
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- right side -->
+            <div class="flex items-center justify-end w-2/4">
+                <!-- User -->
+                <section class="flex flex-row space-x-4">
+                    <div class="text-very-dark-grayish-cyan">
+                        <div class="text-xs font-extrabold">
+                            Timothy Perez
+                        </div>
+                        <div class="text-2xs">
+                            Super Admin
+                        </div>
+                    </div>
+                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt=""
+                        class="rounded-full h-7 w-7">
+                </section>
+                <!-- Notification -->
+                <section class="mx-4">
+                    <button class="block">
+                        <div class="absolute w-1.5 h-1.5 bg-dark-moderate-cyan rounded-full ml-3.5"></div>
+                        <img src="assets\notification-bell.svg" alt="notification bell" class="w-5 h-5">
+                    </button>
+                    <!-- notifications -->
+                    <section
+                        class="fixed z-20 flex flex-col bg-white rounded-lg shadow-sm w-60 right-14 top-14 font-nunito">
+                        <!-- controls -->
+                        <section class="flex items-center justify-around w-full h-12 text-dark-cyan">
+                            <button class="text-xs font-bold">
+                                See all notifications
+                            </button>
+                            <button
+                                class="flex items-center w-24 h-6 rounded-sm justify-evenly text-2xs bg-light-grayish-blue">
+                                <img src="assets\check.svg" alt="check" class="w-2 h-2">
+                                Mark all as read
+                            </button>
+                        </section>
+                        <!-- notifications -->
+                        <section class="flex flex-col items-center justify-start">
+                            <!-- notif item -->
+                            <div
+                                class="flex items-center w-full border-b h-28 justify-evenly last:border-b-0 border-very-light-gray">
+                                <img src="assets\pest.svg" alt="pest" class="w-4 h-4 mb-14">
+                                <div class="flex flex-col justify-between h-20 w-44">
+                                    <!-- notif title -->
+                                    <a href="#" class="block text-xs text-left">
+                                        Aphids infestation on three farms in Baranggay Gabihan
+                                    </a>
+                                    <!-- plant and task affected -->
+                                    <div class="flex text-3xs text-very-dark-grayish-cyan">
+                                        <div class="w-2/4">
+                                            AFFECTED CROPS
+                                            <div class="flex mt-1 space-x-1">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\more-kebab.svg" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                            </div>
+                                        </div>
+                                        <div class="w-2/4">
+                                            AFFECTED ACTIVITIES
+                                            <div class="flex mt-1 space-x-1">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\more-kebab.svg" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                </section>
+                <!-- More action -->
+                <section>
+                    <button class="block">
+                        <img src="assets\more.svg" alt="more action" class="w-3 h-2">
+                    </button>
+                    <!-- menu -->
+                    <section
+                        class="fixed z-20 flex flex-col w-40 text-xs font-bold text-right bg-white rounded-lg shadow-sm right-5 top-14 font-nunito text-very-dark-grayish-cyan">
+                        <!-- menu item -->
+                        <a href="#" class="block px-4 py-2">
+                            Account
+                        </a>
+                        <!-- logout -->
+                        <form action="#" method="POST" class="block px-4 py-2">
+                            <button class="font-bold">Logout</button>
+                        </form>
+                    </section>
+                </section>
+            </div>
+        </nav>
+
+        <!-- Side Nav -->
+        <nav
+            class="fixed z-10 flex flex-col items-center justify-start w-20 min-h-full pt-4 space-y-6 text-center text-white text-opacity-50 mt-14 bg-gradient-to-t from-dark-cyan to-moderate-cyan font-nunito group hover:w-40 hover:pl-5 hover:text-left hover:text-opacity-100 hover:pt-6">
+            <!-- item -->
+            <section
+                class="flex flex-col items-center w-full min-h-custom-1 justify-evenly group-hover:flex-row group-hover:justify-start group-hover:items-start">
+                <img src="assets\menu.svg" alt="menu"
+                    class="w-6 h-6 opacity-50 group-hover:w-4 group-hover:h-4 group-hover:mr-4 group-hover:opacity-100">
+                <div class="space-y-4">
+                    <a href="#" class="block font-extrabold text-3xs group-hover:text-xs">
+                        MENU
+                    </a>
+                    <div class="flex-col hidden space-y-2 font-normal text-2xs group-hover:flex">
+                        <!-- sub item -->
+                        <a href="#" class="block">
+                            Manage Farms
+                        </a>
+                        <a href="#" class="block">
+                            Manage Farms
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Main Content -->
+
+        <!-- dashboard-->
+        <main class="absolute right-0 w-full h-full pl-20 overflow-y-scroll pt-14 from-transparent">
+            <div class="">
+                <!--- general info -->
+                <section>
+
+                </section>
+                <!-- pest infestation reports -->
+                <section>
+
+                </section>
+            </div>
+            <div>
+                <!-- recent announcements -->
+                <section>
+
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>
