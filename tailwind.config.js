@@ -33,7 +33,11 @@ module.exports = {
         },
         minHeight: {
             'custom-1': '3rem',
-        }
+        },
+        width: {
+            '3/10': '30%',
+            '1/10': '10%',
+        },
     },
   },
   variants: {

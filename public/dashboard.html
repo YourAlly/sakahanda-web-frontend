@@ -179,10 +179,10 @@
 
         <!-- dashboard-->
         <main
-            class="absolute right-0 flex flex-col justify-start w-full h-full pl-20 overflow-y-scroll pt-14 from-transparent">
+            class="absolute right-0 flex flex-col justify-start w-full h-full pt-10 pb-4 pl-20 overflow-y-scroll from-transparent font-nunito">
 
             <!-- ROW 1 -->
-            <div class="flex flex-row mt-10 justify-evenly font-nunito">
+            <div class="flex flex-row mt-10 justify-evenly">
                 <div class="w-6/12 space-y-8">
                     <!--- general info -->
                     <section class="flex flex-col justify-around h-44">
@@ -196,7 +196,7 @@
                         <div class="flex flex-row justify-between text-white">
                             <!-- baranggay card -->
                             <div
-                                class="flex flex-col w-48 h-24 pl-4 rounded-md justify-evenly bg-gradient-to-tr from-moderate-blue to-very-soft-blue">
+                                class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-moderate-blue to-very-soft-blue">
                                 <div class="flex flex-row items-center justify-start text-xs font-semibold">
                                     <img src="assets/baranggay.svg" alt="baranggay" class="w-4 h-4 mr-1">
                                     Baranggays
@@ -208,7 +208,7 @@
                             </div>
                             <!-- farmer card -->
                             <div
-                                class="flex flex-col h-24 pl-4 rounded-md w-52 justify-evenly bg-gradient-to-tr from-soft-yellow to-soft-orange">
+                                class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-soft-yellow to-soft-orange">
                                 <div class="flex flex-row items-center justify-start text-xs font-semibold">
                                     <img src="assets/farmers.svg" alt="baranggay" class="w-4 h-4 mr-1">
                                     Farmers
@@ -220,7 +220,7 @@
                             </div>
                             <!-- farm card -->
                             <div
-                                class="flex flex-col w-48 h-24 pl-4 rounded-md justify-evenly bg-gradient-to-tr from-very-dark-grayish-yellow to-mostly-desaturated-dark-orange">
+                                class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-very-dark-grayish-yellow to-mostly-desaturated-dark-orange">
                                 <div class="flex flex-row items-center justify-start text-xs font-semibold">
                                     <img src="assets/farm.svg" alt="baranggay" class="w-4 h-4 mr-1">
                                     Farms
@@ -281,7 +281,7 @@
                     </section>
                 </div>
                 <!-- recent announcements -->
-                <section class="flex flex-col justify-around w-4/12 space-y-4">
+                <section class="flex flex-col justify-around w-4/12">
                     <div class="flex flex-row justify-between">
                         <div class="flex flex-row font-bold">
                             Recent announcements
@@ -366,10 +366,12 @@
                     </div>
                 </section>
             </div>
+
             <!-- ROW 2 -->
-            <div class="flex flex-row mt-10 justify-evenly font-nunito">
-                <section class="w-4/12 h-60">
-                    <div>
+            <div class="flex flex-row mt-10 justify-evenly">
+                <!-- top crops -->
+                <section class="w-4/12 space-y-2 max-h-80">
+                    <div class="space-y-1">
                         <div class="font-bold">
                             Top Crops - Wet Season 2021
                         </div>
@@ -377,23 +379,55 @@
                             VS. WET SEASON 2020
                         </div>
                     </div>
-                    <table class="w-full px-4 text-center border-2 rounded-md">
-                        <thead class="h-12 text-sm font-bold text-white bg-dark-moderate-cyan">
-                            <th>Crop</th>
-                            <th>Size in Hectare</th>
-                            <th>Delta</th>
+                    <table
+                        class="w-full overflow-hidden border border-separate border-gray-300 rounded-lg table-fixed border-space-0">
+                        <thead class="h-10 bg-dark-moderate-cyan text-light-grayish-blue">
+                            <tr>
+                                <th>Crop</th>
+                                <th>Size in Hectare</th>
+                                <th>Delta</th>
+                            </tr>
                         </thead>
-                        <tbody>
-                            <tr class="h-10 text-sm font-bold">
-                                <td>Rice</td>
-                                <td>113 HA</td>
+                        <tbody class="text-sm font-bold text-center uppercase max-h-40">
+                            <tr class="h-10">
+                                <td>rice</td>
+                                <td>113 ha</td>
+                                <td>+25%</td>
+                            </tr>
+                            <tr class="h-10">
+                                <td>rice</td>
+                                <td>113 ha</td>
+                                <td>+25%</td>
+                            </tr>
+                            <tr class="h-10">
+                                <td>rice</td>
+                                <td>113 ha</td>
+                                <td>+25%</td>
+                            </tr>
+                            <tr class="h-10">
+                                <td>rice</td>
+                                <td>113 ha</td>
                                 <td>+25%</td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
-                <section class="w-6/12">
+                <!-- municipal map -->
+                <section class="w-6/12 space-y-2">
+                    <div class="font-bold">
+                        Municipal Map
+                    </div>
+                    <div class="h-80 bg-dark-moderate-cyan">
 
+                    </div>
+                </section>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="flex flex-row justify-center mt-10 mb-5">
+                <section class="w-11/12 space-y-2">
+                    <div class="font-bold">Weather Forecast</div>
+                    <div class="h-56 bg-dark-moderate-cyan"></div>
                 </section>
             </div>
         </main>
