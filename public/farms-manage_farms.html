@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\app.css">
+        <title>Document</title>
+    </head>
+
+    <body class="w-screen h-screen overflow-hidden bg-light-grayish-blue">
+        <!-- Top Nav -->
+        <nav class="fixed z-10 flex w-full py-2 bg-white shadow-md h-14 px-7 font-nunito">
+            <!-- left side -->
+            <div class="flex items-center justify-between w-2/4">
+                <!-- Logo -->
+                <section class="flex flex-row text-lg font-extrabold text-dark-moderate-cyan">
+                    <img src="assets\sakahanda-logo.png" alt="sakahanda logo" class="w-6 mr-3 h-7">
+                    SAKAHANDA
+                </section>
+                <!-- Location and weather  -->
+                <section class="flex flex-row justify-between w-2/4">
+                    <div>
+                        <div class="flex flex-row items-center text-xs font-extrabold text-dark-moderate-cyan">
+                            <img src="assets\location.svg" alt="location icon" class="w-2 h-3 mr-2">
+                            San Miguel, Bulacan
+                        </div>
+                        <div class="space-x-3 text-2xs text-very-dark-gray">
+                            <time>Thursday, July 29, 2021</time>
+                            <time>9:45 AM</time>
+                        </div>
+                    </div>
+                    <!-- Weather -->
+                    <div class="flex items-center">
+                        <img src="assets\u_cloud-sun.svg" alt="location icon" class="mr-3 w-7 h-7">
+                        <div class="">
+                            <div class="flex flex-row text-xs font-extrabold text-dark-moderate-cyan">
+                                18°C Clear Skies
+                            </div>
+                            <div class="flex space-x-2 text-2xs text-very-dark-gray">
+                                <div class="flex flex-row items-center">
+                                    <img src="assets\arrow-up.svg" alt="arrow up" class="h-2 mr-1">
+                                    18°C
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img src="assets\arrow-up.svg" alt="arrow up" class="h-2 mr-1">
+                                    18°C
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- right side -->
+            <div class="flex items-center justify-end w-2/4">
+                <!-- User -->
+                <section class="flex flex-row space-x-4">
+                    <div class="text-very-dark-grayish-cyan">
+                        <div class="text-xs font-extrabold">
+                            Timothy Perez
+                        </div>
+                        <div class="text-2xs">
+                            Super Admin
+                        </div>
+                    </div>
+                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt=""
+                        class="rounded-full h-7 w-7">
+                </section>
+                <!-- Notification -->
+                <section class="mx-4">
+                    <button class="block">
+                        <div class="absolute w-1.5 h-1.5 bg-dark-moderate-cyan rounded-full ml-3.5"></div>
+                        <img src="assets\notification-bell.svg" alt="notification bell" class="w-5 h-5">
+                    </button>
+                    <!-- notifications -->
+                    <section
+                        class="fixed z-20 flex flex-col hidden bg-white rounded-lg shadow-sm w-60 right-14 top-14 font-nunito">
+                        <!-- controls -->
+                        <section class="flex items-center justify-around w-full h-12 text-dark-cyan">
+                            <button class="text-xs font-bold">
+                                See all notifications
+                            </button>
+                            <button
+                                class="flex items-center w-24 h-6 rounded-sm justify-evenly text-2xs bg-light-grayish-blue">
+                                <img src="assets\check.svg" alt="check" class="w-2 h-2">
+                                Mark all as read
+                            </button>
+                        </section>
+                        <!-- notifications -->
+                        <section class="flex flex-col items-center justify-start">
+                            <!-- notif item -->
+                            <div
+                                class="flex items-center w-full border-b h-28 justify-evenly last:border-b-0 border-very-light-gray">
+                                <img src="assets\pest.svg" alt="pest" class="w-4 h-4 mb-14">
+                                <div class="flex flex-col justify-between h-20 w-44">
+                                    <!-- notif title -->
+                                    <a href="#" class="block text-xs text-left">
+                                        Aphids infestation on three farms in Baranggay Gabihan
+                                    </a>
+                                    <!-- plant and task affected -->
+                                    <div class="flex text-3xs text-very-dark-grayish-cyan">
+                                        <div class="w-2/4">
+                                            AFFECTED CROPS
+                                            <div class="flex mt-1 space-x-1">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\more-kebab.svg" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                            </div>
+                                        </div>
+                                        <div class="w-2/4">
+                                            AFFECTED ACTIVITIES
+                                            <div class="flex mt-1 space-x-1">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\bokchoy.png" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                                <img src="assets\more-kebab.svg" alt="bokchoy"
+                                                    class="w-5 h-5 p-1 rounded-full bg-very-light-gray">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                </section>
+                <!-- More action -->
+                <section>
+                    <button class="block">
+                        <img src="assets\more.svg" alt="more action" class="w-3 h-2">
+                    </button>
+                    <!-- menu -->
+                    <section
+                        class="fixed z-20 flex flex-col hidden w-40 text-xs font-bold text-right bg-white rounded-lg shadow-sm right-5 top-14 font-nunito text-very-dark-grayish-cyan">
+                        <!-- menu item -->
+                        <a href="#" class="block px-4 py-2">
+                            Account
+                        </a>
+                        <!-- logout -->
+                        <form action="#" method="POST" class="block px-4 py-2">
+                            <button class="font-bold">Logout</button>
+                        </form>
+                    </section>
+                </section>
+            </div>
+        </nav>
+
+        <!-- Side Nav -->
+        <nav
+            class="fixed z-10 flex flex-col items-center justify-start w-20 min-h-full pt-4 space-y-6 text-center text-white text-opacity-50 mt-14 bg-gradient-to-t from-dark-cyan to-moderate-cyan font-nunito group hover:w-40 hover:pl-5 hover:text-left hover:text-opacity-100 hover:pt-6">
+            <!-- item -->
+            <section
+                class="flex flex-col items-center w-full min-h-custom-1 justify-evenly group-hover:flex-row group-hover:justify-start group-hover:items-start">
+                <img src="assets\menu.svg" alt="menu"
+                    class="w-6 h-6 opacity-50 group-hover:w-4 group-hover:h-4 group-hover:mr-4 group-hover:opacity-100">
+                <div class="space-y-4">
+                    <a href="#" class="block font-extrabold text-3xs group-hover:text-xs">
+                        MENU
+                    </a>
+                    <div class="flex-col hidden space-y-2 font-normal text-2xs group-hover:flex">
+                        <!-- sub item -->
+                        <a href="#" class="block">
+                            Manage Farms
+                        </a>
+                        <a href="#" class="block">
+                            Manage Farms
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="absolute right-0 w-full h-full pb-10 pl-20 space-y-8 overflow-y-scroll pt-14 font-inter">
+
+
+            <div class="flex flex-row items-center justify-between w-11/12 mx-auto mt-8 text-sm font-semibold">
+                <!-- breadcrumbs -->
+                <section class="flex flex-row items-center space-x-2">
+                    <div><a href="#">Farms</a></div>
+                    <img src="assets/chev_right.svg" alt="chevron right" class="w-2 h-2">
+                    <div><a href="#">Municipal Map</a></div>
+                    <img src="assets/chev_right.svg" alt="chevron right" class="w-2 h-2">
+                    <div class="text-dark-moderate-cyan">Manage Farms</div>
+                </section>
+                <!-- manage baranggays -->
+                <section class="flex flex-row items-center">
+                    <img src="assets/setting-icon.svg" alt="setting" class="w-4 h-4 mr-2">
+                    Manage Baranggays
+                </section>
+            </div>
+
+
+            <div class="flex flex-row justify-between w-11/12 mx-auto">
+                <!-- filter -->
+                <section class="flex flex-row w-7/12 space-x-2 text-xs">
+                    <!-- baranggay -->
+                    <div class="flex flex-row items-center">
+                        <label for="baranggay" class="mr-2">Baranggay: </label>
+                        <select name="baranggay" id="brgy"
+                            class="h-full px-3 border rounded-md border-light-gray custom-select-1">
+                            <option value="bubulong_munti">All Crops</option>
+                        </select>
+                    </div>
+                    <!-- crop -->
+                    <div class="flex flex-row items-center">
+                        <label for="baranggay" class="mr-2">Crop: </label>
+                        <div
+                            class="flex items-center justify-center w-8 h-full border-t border-b border-l rounded-l-md bg-dark-moderate-cyan border-light-gray">
+                            <img src="assets/filter-crop.svg" alt="filter crop" class="w-3.5 h-3.5">
+                        </div>
+                        <select name="baranggay" id="brgy"
+                            class="h-full px-3 border-t border-b border-r rounded-r-md border-light-gray custom-select-1">
+                            <option value="bubulong_munti">All Crops</option>
+                        </select>
+                    </div>
+                    <!-- status -->
+                    <div class="flex flex-row items-center">
+                        <label for="baranggay" class="mr-2">Status: </label>
+                        <select name="baranggay" id="brgy"
+                            class="h-full px-3 border rounded-md border-light-gray custom-select-1">
+                            <option value="bubulong_munti">Default</option>
+                        </select>
+                    </div>
+                    <!-- sort by -->
+                    <div class="flex flex-row items-center">
+                        <label for="baranggay" class="mr-2">Sort By: </label>
+                        <select name="baranggay" id="brgy"
+                            class="h-full px-3 border rounded-md border-light-gray custom-select-1">
+                            <option value="bubulong_munti">Owner/Farmer</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- search -->
+                <section class="flex flex-row justify-end w-4/12 space-x-4">
+                    <div
+                        class="flex flex-row-reverse items-center w-8/12 h-8 overflow-auto bg-white border rounded-md border-light-gray">
+                        <input type="text" class="w-full h-full px-2 text-xs" placeholder="Search a farm">
+                        <img src="assets/search-icon.svg" alt="search" class="absolute w-4 h-4 mr-4">
+                    </div>
+                    <button
+                        class="flex flex-row items-center justify-evenly w-3.5/12 text-xs rounded-lg bg-dark-moderate-cyan font-semibold text-white">
+                        <img src="assets/add-icon.svg" alt="add" class="w-2.5 h-2.5">
+                        Add Farm
+                    </button>
+                </section>
+            </div>
+
+            <div class="w-11/12 mx-auto mt-4">
+
+                <!-- baranggay name -->
+                <h1 class="text-xl font-bold font-nunito">
+                    Bubulong Munti
+                </h1>
+
+                <!-- farms -->
+                <section class="w-full mt-2 space-y-6">
+
+                    <!-- farm card row -->
+                    <div class="flex flex-row justify-between w-full">
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- farm card row -->
+                    <div class="flex flex-row justify-between w-full">
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- farm card row -->
+                    <div class="flex flex-row justify-between w-full">
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- farm card row -->
+                    <div class="flex flex-row justify-between w-full">
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- farm card -->
+                        <div class="flex flex-col w-2.3/10 h-56 mt-2 overflow-auto rounded-md shadow-md">
+                            <div class="flex flex-col justify-between w-full text-2xs h-6/10"
+                                style="background-image: url('assets/farm.jpg');">
+                                <!-- settings -->
+                                <div class="self-end mt-2.5 mr-1 space-x-px flex flex-row group">
+                                    <div class="hidden w-24 px-1 py-1 bg-white rounded-md text-2xs group-hover:block">
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">View Farm
+                                        </div>
+                                        <div class="px-0.5 py-0.5 hover:bg-light-grayish-cyan rounded-sm">Edit</div>
+                                        <div
+                                            class="px-0.5 pb-0.5 pt-1 border-t hover:bg-light-grayish-cyan rounded-sm text-strong-red mt-1">
+                                            Archive</div>
+                                    </div>
+                                    <img src="assets/more-kebab-2.svg" alt="more" class="w-4 h-4">
+                                </div>
+                                <!-- address -->
+                                <div class="flex flex-row items-center mb-1 ml-2 text-white">
+                                    <img src="assets/location-white.svg" alt="location" class="w-3 h-3 mr-1">
+                                    Near Sapang Rd., Bubulong Munti, San Ildefonso
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-around w-full px-3 bg-white h-4/10 font-nunito">
+                                <div class="flex flex-row items-center justify-between">
+                                    <!-- farm name -->
+                                    <div class="flex flex-col">
+                                        <div class="text-lg font-bold">Juana's Farm</div>
+                                        <div class="text-xs">Juana Dela Cruz</div>
+                                    </div>
+                                    <!-- crops -->
+                                    <div class="flex flex-row self-start pt-2 space-x-1">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                        <img src="assets\bokchoy.png" alt="bokchoy"
+                                            class="w-6 h-6 p-1 rounded-full bg-very-light-gray">
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between text-2xs">
+                                    <!-- condition -->
+                                    <div class="flex flex-row">
+                                        <img src="assets/warning.svg" alt="warning" class="w-3 h-3 mr-1">
+                                        Severe Aphids Infestation
+                                    </div>
+                                    <!-- area -->
+                                    <div>
+                                        1.5 ha
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>
