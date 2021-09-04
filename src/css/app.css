@@ -9,14 +9,4 @@
     .border-space-0 {
         border-spacing: 0;
     }
-    .custom-select-1 {
-        padding-right: 2rem;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-image: url('../../public/assets/filter-dropdown-icon.svg');
-        background-repeat: no-repeat;
-        background-size: 0.5rem;
-        background-position: right 0.5rem center;
-    }
 }

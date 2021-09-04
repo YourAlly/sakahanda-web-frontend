@@ -9,20 +9,20 @@
         <title>Document</title>
     </head>
 
-    <body class="w-screen h-screen overflow-hidden bg-light-grayish-blue">
+    <body class="w-screen h-screen overflow-hidden">
         <!-- Top Nav -->
-        <nav class="fixed z-10 flex w-full py-2 bg-white shadow-md h-14 px-7 font-nunito">
+        <nav class="fixed z-10 flex w-full bg-white shadow-md h-14 px-7 font-nunito">
             <!-- left side -->
             <div class="flex items-center justify-between w-2/4">
                 <!-- Logo -->
-                <section class="flex flex-row text-lg font-extrabold text-dark-moderate-cyan">
+                <section class="flex text-lg font-extrabold text-dark-moderate-cyan">
                     <img src="assets\sakahanda-logo.png" alt="sakahanda logo" class="w-6 mr-3 h-7">
                     SAKAHANDA
                 </section>
                 <!-- Location and weather  -->
-                <section class="flex flex-row justify-between w-2/4">
+                <section class="flex justify-between w-2/4">
                     <div>
-                        <div class="flex flex-row items-center text-xs font-extrabold text-dark-moderate-cyan">
+                        <div class="flex items-center text-xs font-extrabold text-dark-moderate-cyan">
                             <img src="assets\location.svg" alt="location icon" class="w-2 h-3 mr-2">
                             San Miguel, Bulacan
                         </div>
@@ -35,15 +35,15 @@
                     <div class="flex items-center">
                         <img src="assets\u_cloud-sun.svg" alt="location icon" class="mr-3 w-7 h-7">
                         <div class="">
-                            <div class="flex flex-row text-xs font-extrabold text-dark-moderate-cyan">
+                            <div class="flex text-xs font-extrabold text-dark-moderate-cyan">
                                 18°C Clear Skies
                             </div>
                             <div class="flex space-x-2 text-2xs text-very-dark-gray">
-                                <div class="flex flex-row items-center">
+                                <div class="flex items-center">
                                     <img src="assets\arrow-up.svg" alt="arrow up" class="h-2 mr-1">
                                     18°C
                                 </div>
-                                <div class="flex flex-row items-center">
+                                <div class="flex items-center">
                                     <img src="assets\arrow-up.svg" alt="arrow up" class="h-2 mr-1">
                                     18°C
                                 </div>
@@ -55,7 +55,7 @@
             <!-- right side -->
             <div class="flex items-center justify-end w-2/4">
                 <!-- User -->
-                <section class="flex flex-row space-x-4">
+                <section class="flex space-x-4">
                     <div class="text-very-dark-grayish-cyan">
                         <div class="text-xs font-extrabold">
                             Timothy Perez
@@ -75,7 +75,7 @@
                     </button>
                     <!-- notifications -->
                     <section
-                        class="fixed z-20 flex flex-col hidden bg-white rounded-lg shadow-sm w-60 right-14 top-14 font-nunito">
+                        class="fixed z-20 flex-col hidden bg-white rounded-lg shadow-sm w-60 right-14 top-14 font-nunito">
                         <!-- controls -->
                         <section class="flex items-center justify-around w-full h-12 text-dark-cyan">
                             <button class="text-xs font-bold">
@@ -150,285 +150,291 @@
             </div>
         </nav>
 
-        <!-- Side Nav -->
-        <nav
-            class="fixed z-10 flex flex-col items-center justify-start w-20 min-h-full pt-4 space-y-6 text-center text-white text-opacity-50 mt-14 bg-gradient-to-t from-dark-cyan to-moderate-cyan font-nunito group hover:w-40 hover:pl-5 hover:text-left hover:text-opacity-100 hover:pt-6">
-            <!-- item -->
-            <section
-                class="flex flex-col items-center w-full min-h-custom-1 justify-evenly group-hover:flex-row group-hover:justify-start group-hover:items-start">
-                <img src="assets\menu.svg" alt="menu"
-                    class="w-6 h-6 opacity-50 group-hover:w-4 group-hover:h-4 group-hover:mr-4 group-hover:opacity-100">
-                <div class="space-y-4">
-                    <a href="#" class="block font-extrabold text-3xs group-hover:text-xs">
-                        MENU
-                    </a>
-                    <div class="flex-col hidden space-y-2 font-normal text-2xs group-hover:flex">
-                        <!-- sub item -->
-                        <a href="#" class="block">
-                            Manage Farms
+        <div class="flex h-full pt-14">
+            <!-- Side Nav -->
+            <nav
+                class="flex flex-col items-center justify-start flex-shrink-0 w-20 min-h-full pt-4 space-y-6 text-center text-white text-opacity-50 bg-gradient-to-t from-dark-cyan to-moderate-cyan font-nunito group hover:w-40 hover:pl-5 hover:text-left hover:text-opacity-100 hover:pt-6">
+                <!-- item -->
+                <section
+                    class="flex flex-col items-center w-full min-h-custom-1 justify-evenly group-hover:flex-row group-hover:justify-start group-hover:items-start">
+                    <img src="assets\menu.svg" alt="menu"
+                        class="w-6 h-6 opacity-50 group-hover:w-4 group-hover:h-4 group-hover:mr-4 group-hover:opacity-100">
+                    <div class="space-y-4">
+                        <a href="#" class="block font-extrabold text-3xs group-hover:text-xs">
+                            MENU
                         </a>
-                        <a href="#" class="block">
-                            Manage Farms
-                        </a>
+                        <div class="flex-col hidden space-y-2 font-normal text-2xs group-hover:flex">
+                            <!-- sub item -->
+                            <a href="#" class="block">
+                                Manage Farms
+                            </a>
+                            <a href="#" class="block">
+                                Manage Farms
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </nav>
+                </section>
+            </nav>
 
-        <!-- Main Content -->
-        <main
-            class="absolute right-0 flex flex-col justify-start w-full h-full pl-20 overflow-y-scroll pt-14 font-nunito">
-
-            <!-- ROW 1 -->
-            <div class="flex flex-row mt-10 justify-evenly">
-                <div class="w-6/12 space-y-8">
-                    <!--- general info -->
-                    <section class="flex flex-col justify-around h-44">
-                        <div class="space-y-1">
-                            <div class="text-lg font-extrabold">Welcome back, Timothy!</div>
-                            <div class="text-xs">The following are summary of crop production demographics in your
-                                municipality.
+            <!-- Main Content -->
+            <main class="w-full h-full p-10 space-y-4 overflow-y-scroll font-inter bg-light-grayish-blue">
+                <!-- ROW 1 -->
+                <div class="flex justify-evenly">
+                    <div class="w-6/12 space-y-8">
+                        <!--- general info -->
+                        <section class="flex flex-col justify-around h-44">
+                            <div class="space-y-1">
+                                <div class="text-lg font-extrabold">Welcome back, Timothy!</div>
+                                <div class="text-xs">The following are summary of crop production demographics in your
+                                    municipality.
+                                </div>
                             </div>
-                        </div>
-                        <!-- info cards -->
-                        <div class="flex flex-row justify-between text-white">
-                            <!-- baranggay card -->
+                            <!-- info cards -->
+                            <div class="flex justify-between text-white">
+                                <!-- baranggay card -->
+                                <div
+                                    class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-moderate-blue to-very-soft-blue">
+                                    <div class="flex items-center justify-start text-xs font-semibold">
+                                        <img src="assets/baranggay.svg" alt="baranggay" class="w-4 h-4 mr-1">
+                                        Baranggays
+                                    </div>
+                                    <div>
+                                        <div class="text-xl font-bold">20<span class="ml-1 opacity-50">/ 36</span></div>
+                                        <div class="font-medium text-2xs">with Registered Farmers</div>
+                                    </div>
+                                </div>
+                                <!-- farmer card -->
+                                <div
+                                    class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-soft-yellow to-soft-orange">
+                                    <div class="flex items-center justify-start text-xs font-semibold">
+                                        <img src="assets/farmers.svg" alt="baranggay" class="w-4 h-4 mr-1">
+                                        Farmers
+                                    </div>
+                                    <div>
+                                        <div class="text-xl font-bold">2586<span class="ml-1 opacity-50">/ 4000</span>
+                                        </div>
+                                        <div class="font-medium text-2xs">Registered on the App</div>
+                                    </div>
+                                </div>
+                                <!-- farm card -->
+                                <div
+                                    class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-very-dark-grayish-yellow to-mostly-desaturated-dark-orange">
+                                    <div class="flex items-center justify-start text-xs font-semibold">
+                                        <img src="assets/farm.svg" alt="baranggay" class="w-4 h-4 mr-1">
+                                        Farms
+                                    </div>
+                                    <div>
+                                        <div class="text-xl font-bold">2613</div>
+                                        <div class="font-medium text-2xs">Overall in the Municipality</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- pest infestation reports -->
+                        <section class="flex flex-col justify-between h-44">
+                            <div class="font-bold">Pest Infestation and Reports</div>
                             <div
-                                class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-moderate-blue to-very-soft-blue">
-                                <div class="flex flex-row items-center justify-start text-xs font-semibold">
-                                    <img src="assets/baranggay.svg" alt="baranggay" class="w-4 h-4 mr-1">
-                                    Baranggays
+                                class="flex flex-col text-white rounded-md justify-evenly h-36 bg-gradient-to-r from-soft-red-2 to-soft-red px-14">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="text-xs">
+                                            REPORT SUMMARY
+                                        </div>
+                                        <div class="text-sm font-bold">
+                                            Wet Season - July 2021
+                                        </div>
+                                    </div>
+                                    <div class="font-bold">
+                                        2 New Cases
+                                    </div>
                                 </div>
-                                <div>
-                                    <div class="text-xl font-bold">20<span class="ml-1 opacity-50">/ 36</span></div>
-                                    <div class="font-medium text-2xs">with Registered Farmers</div>
-                                </div>
-                            </div>
-                            <!-- farmer card -->
-                            <div
-                                class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-soft-yellow to-soft-orange">
-                                <div class="flex flex-row items-center justify-start text-xs font-semibold">
-                                    <img src="assets/farmers.svg" alt="baranggay" class="w-4 h-4 mr-1">
-                                    Farmers
-                                </div>
-                                <div>
-                                    <div class="text-xl font-bold">2586<span class="ml-1 opacity-50">/ 4000</span></div>
-                                    <div class="font-medium text-2xs">Registered on the App</div>
-                                </div>
-                            </div>
-                            <!-- farm card -->
-                            <div
-                                class="flex flex-col h-24 pl-4 rounded-md w-3/10 justify-evenly bg-gradient-to-tr from-very-dark-grayish-yellow to-mostly-desaturated-dark-orange">
-                                <div class="flex flex-row items-center justify-start text-xs font-semibold">
-                                    <img src="assets/farm.svg" alt="baranggay" class="w-4 h-4 mr-1">
-                                    Farms
-                                </div>
-                                <div>
-                                    <div class="text-xl font-bold">2613</div>
-                                    <div class="font-medium text-2xs">Overall in the Municipality</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- pest infestation reports -->
-                    <section class="flex flex-col justify-between h-44">
-                        <div class="font-bold">Pest Infestation and Reports</div>
-                        <div
-                            class="flex flex-col text-white rounded-md justify-evenly h-36 bg-gradient-to-r from-soft-red-2 to-soft-red px-14">
-                            <div class="flex flex-row items-center justify-between">
-                                <div>
+                                <div class="flex items-center justify-around">
+                                    <!-- pending -->
                                     <div class="text-xs">
-                                        REPORT SUMMARY
+                                        Pending
+                                        <div class="text-lg font-extrabold">
+                                            8
+                                        </div>
                                     </div>
-                                    <div class="text-sm font-bold">
-                                        Wet Season - July 2021
+                                    <div class="text-xs">
+                                        Ongoing
+                                        <div class="text-lg font-extrabold">
+                                            20
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="font-bold">
-                                    2 New Cases
+                                    <div class="text-xs">
+                                        Resolved
+                                        <div class="text-lg font-extrabold">
+                                            30
+                                        </div>
+                                    </div>
+                                    <div class="text-xs">
+                                        Reported
+                                        <div class="text-lg font-extrabold">
+                                            60
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex flex-row items-center justify-around">
-                                <!-- pending -->
-                                <div class="text-xs">
-                                    Pending
-                                    <div class="text-lg font-extrabold">
-                                        8
+                        </section>
+                    </div>
+                    <!-- recent announcements -->
+                    <section class="flex flex-col justify-around w-4/12">
+                        <div class="flex justify-between">
+                            <div class="flex font-bold">
+                                Recent announcements
+                                <img src="assets/edit.svg" alt="edit" class="w-5 h-5 ml-4">
+                            </div>
+                            <div class="text-dark-gray">
+                                See All
+                            </div>
+                        </div>
+                        <!-- announcements -->
+                        <div class="overflow-y-scroll bg-white rounded-md h-80">
+                            <!-- ann. 1 -->
+                            <div class="flex flex-col justify-around h-32 pb-4 mx-4 mt-4 border-b-2">
+                                <!-- details -->
+                                <div class="space-y-0.5">
+                                    <!-- title -->
+                                    <div class="flex items-center space-x-5">
+                                        <div class="font-extrabold text-dark-moderate-cyan">Title of the Announcement
+                                        </div>
+                                        <div class="px-1.5 py-0.5 rounded-sm text-2xs bg-moderate-blue text-white">
+                                            PROGRAMS
+                                        </div>
+                                    </div>
+                                    <!-- author -->
+                                    <div class="flex space-x-4 font-bold text-2xs text-very-dark-gray">
+                                        <div>Timothy Ryeyn Perez</div>
+                                        <div>August 9, 8:38 PM</div>
                                     </div>
                                 </div>
-                                <div class="text-xs">
-                                    Ongoing
-                                    <div class="text-lg font-extrabold">
-                                        20
+                                <!-- content -->
+                                <div class="text-xs italic text-dark-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla ipsum.
+                                    Nullam commodo risus enim, nec
+                                    dapibus turpis sollicitudin sed. Vivamus in luctus lorem. Donec sit amet...
+                                </div>
+                            </div>
+                            <!-- ann. 2 -->
+                            <div class="flex flex-col justify-around h-32 pb-4 mx-4 mt-4 border-b-2">
+                                <!-- details -->
+                                <div class="space-y-0.5">
+                                    <!-- title -->
+                                    <div class="flex items-center space-x-5">
+                                        <div class="font-extrabold text-dark-moderate-cyan">Title of the Announcement
+                                        </div>
+                                        <div class="px-1.5 py-0.5 rounded-sm text-2xs bg-bright-orange text-white">EVENT
+                                        </div>
+                                    </div>
+                                    <!-- author -->
+                                    <div class="flex space-x-4 font-bold text-2xs text-very-dark-gray">
+                                        <div>Timothy Ryeyn Perez</div>
+                                        <div>August 9, 8:38 PM</div>
                                     </div>
                                 </div>
-                                <div class="text-xs">
-                                    Resolved
-                                    <div class="text-lg font-extrabold">
-                                        30
+                                <!-- content -->
+                                <div class="text-xs italic text-dark-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla ipsum.
+                                    Nullam commodo risus enim, nec
+                                    dapibus turpis sollicitudin sed. Vivamus in luctus lorem. Donec sit amet...
+                                </div>
+                            </div>
+                            <!-- ann. 3 -->
+                            <div class="flex flex-col justify-around h-32 pb-4 mx-4 mt-4">
+                                <!-- details -->
+                                <div class="space-y-0.5">
+                                    <!-- title -->
+                                    <div class="flex items-center space-x-5">
+                                        <div class="font-extrabold text-dark-moderate-cyan">Title of the Announcement
+                                        </div>
+                                        <div class="px-1.5 py-0.5 rounded-sm text-2xs bg-dark-moderate-cyan text-white">
+                                            ALERT
+                                        </div>
+                                    </div>
+                                    <!-- author -->
+                                    <div class="flex space-x-4 font-bold text-2xs text-very-dark-gray">
+                                        <div>Timothy Ryeyn Perez</div>
+                                        <div>August 9, 8:38 PM</div>
                                     </div>
                                 </div>
-                                <div class="text-xs">
-                                    Reported
-                                    <div class="text-lg font-extrabold">
-                                        60
-                                    </div>
+                                <!-- content -->
+                                <div class="text-xs italic text-dark-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla ipsum.
+                                    Nullam commodo risus enim, nec
+                                    dapibus turpis sollicitudin sed. Vivamus in luctus lorem. Donec sit amet...
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
-                <!-- recent announcements -->
-                <section class="flex flex-col justify-around w-4/12">
-                    <div class="flex flex-row justify-between">
-                        <div class="flex flex-row font-bold">
-                            Recent announcements
-                            <img src="assets/edit.svg" alt="edit" class="w-5 h-5 ml-4">
-                        </div>
-                        <div class="text-dark-gray">
-                            See All
-                        </div>
-                    </div>
-                    <!-- announcements -->
-                    <div class="overflow-y-scroll bg-white rounded-md h-80">
-                        <!-- ann. 1 -->
-                        <div class="flex flex-col justify-around h-32 pb-4 mx-4 mt-4 border-b-2">
-                            <!-- details -->
-                            <div class="space-y-0.5">
-                                <!-- title -->
-                                <div class="flex flex-row items-center space-x-5">
-                                    <div class="font-extrabold text-dark-moderate-cyan">Title of the Announcement</div>
-                                    <div class="px-1.5 py-0.5 rounded-sm text-2xs bg-moderate-blue text-white">PROGRAMS
-                                    </div>
-                                </div>
-                                <!-- author -->
-                                <div class="flex flex-row space-x-4 font-bold text-2xs text-very-dark-gray">
-                                    <div>Timothy Ryeyn Perez</div>
-                                    <div>August 9, 8:38 PM</div>
-                                </div>
-                            </div>
-                            <!-- content -->
-                            <div class="text-xs italic text-dark-gray">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla ipsum.
-                                Nullam commodo risus enim, nec
-                                dapibus turpis sollicitudin sed. Vivamus in luctus lorem. Donec sit amet...
-                            </div>
-                        </div>
-                        <!-- ann. 2 -->
-                        <div class="flex flex-col justify-around h-32 pb-4 mx-4 mt-4 border-b-2">
-                            <!-- details -->
-                            <div class="space-y-0.5">
-                                <!-- title -->
-                                <div class="flex flex-row items-center space-x-5">
-                                    <div class="font-extrabold text-dark-moderate-cyan">Title of the Announcement</div>
-                                    <div class="px-1.5 py-0.5 rounded-sm text-2xs bg-bright-orange text-white">EVENT
-                                    </div>
-                                </div>
-                                <!-- author -->
-                                <div class="flex flex-row space-x-4 font-bold text-2xs text-very-dark-gray">
-                                    <div>Timothy Ryeyn Perez</div>
-                                    <div>August 9, 8:38 PM</div>
-                                </div>
-                            </div>
-                            <!-- content -->
-                            <div class="text-xs italic text-dark-gray">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla ipsum.
-                                Nullam commodo risus enim, nec
-                                dapibus turpis sollicitudin sed. Vivamus in luctus lorem. Donec sit amet...
-                            </div>
-                        </div>
-                        <!-- ann. 3 -->
-                        <div class="flex flex-col justify-around h-32 pb-4 mx-4 mt-4">
-                            <!-- details -->
-                            <div class="space-y-0.5">
-                                <!-- title -->
-                                <div class="flex flex-row items-center space-x-5">
-                                    <div class="font-extrabold text-dark-moderate-cyan">Title of the Announcement</div>
-                                    <div class="px-1.5 py-0.5 rounded-sm text-2xs bg-dark-moderate-cyan text-white">
-                                        ALERT
-                                    </div>
-                                </div>
-                                <!-- author -->
-                                <div class="flex flex-row space-x-4 font-bold text-2xs text-very-dark-gray">
-                                    <div>Timothy Ryeyn Perez</div>
-                                    <div>August 9, 8:38 PM</div>
-                                </div>
-                            </div>
-                            <!-- content -->
-                            <div class="text-xs italic text-dark-gray">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fringilla ipsum.
-                                Nullam commodo risus enim, nec
-                                dapibus turpis sollicitudin sed. Vivamus in luctus lorem. Donec sit amet...
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
 
-            <!-- ROW 2 -->
-            <div class="flex flex-row mt-10 justify-evenly">
-                <!-- top crops -->
-                <section class="w-4/12 space-y-2 max-h-80">
-                    <div class="space-y-1">
+                <!-- ROW 2 -->
+                <div class="flex justify-evenly">
+                    <!-- top crops -->
+                    <section class="w-4/12 space-y-2 max-h-80">
+                        <div class="space-y-1">
+                            <div class="font-bold">
+                                Top Crops - Wet Season 2021
+                            </div>
+                            <div class="text-xs text-very-dark-gray">
+                                VS. WET SEASON 2020
+                            </div>
+                        </div>
+                        <table
+                            class="w-full overflow-hidden border border-separate border-gray-300 rounded-lg table-fixed border-space-0">
+                            <thead class="h-10 bg-dark-moderate-cyan text-light-grayish-blue">
+                                <tr>
+                                    <th>Crop</th>
+                                    <th>Size in Hectare</th>
+                                    <th>Delta</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm font-bold text-center uppercase max-h-40">
+                                <tr class="h-10">
+                                    <td>rice</td>
+                                    <td>113 ha</td>
+                                    <td>+25%</td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td>rice</td>
+                                    <td>113 ha</td>
+                                    <td>+25%</td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td>rice</td>
+                                    <td>113 ha</td>
+                                    <td>+25%</td>
+                                </tr>
+                                <tr class="h-10">
+                                    <td>rice</td>
+                                    <td>113 ha</td>
+                                    <td>+25%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- municipal map -->
+                    <section class="w-6/12 space-y-2">
                         <div class="font-bold">
-                            Top Crops - Wet Season 2021
+                            Municipal Map
                         </div>
-                        <div class="text-xs text-very-dark-gray">
-                            VS. WET SEASON 2020
+                        <div class="h-80 bg-dark-moderate-cyan">
+
                         </div>
-                    </div>
-                    <table
-                        class="w-full overflow-hidden border border-separate border-gray-300 rounded-lg table-fixed border-space-0">
-                        <thead class="h-10 bg-dark-moderate-cyan text-light-grayish-blue">
-                            <tr>
-                                <th>Crop</th>
-                                <th>Size in Hectare</th>
-                                <th>Delta</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-sm font-bold text-center uppercase max-h-40">
-                            <tr class="h-10">
-                                <td>rice</td>
-                                <td>113 ha</td>
-                                <td>+25%</td>
-                            </tr>
-                            <tr class="h-10">
-                                <td>rice</td>
-                                <td>113 ha</td>
-                                <td>+25%</td>
-                            </tr>
-                            <tr class="h-10">
-                                <td>rice</td>
-                                <td>113 ha</td>
-                                <td>+25%</td>
-                            </tr>
-                            <tr class="h-10">
-                                <td>rice</td>
-                                <td>113 ha</td>
-                                <td>+25%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <!-- municipal map -->
-                <section class="w-6/12 space-y-2">
-                    <div class="font-bold">
-                        Municipal Map
-                    </div>
-                    <div class="h-80 bg-dark-moderate-cyan">
+                    </section>
+                </div>
 
-                    </div>
-                </section>
-            </div>
+                <!-- ROW 3 -->
+                <div class="flex justify-center mb-5">
+                    <section class="w-11/12 space-y-2">
+                        <div class="font-bold">Weather Forecast</div>
+                        <div class="h-56 bg-dark-moderate-cyan"></div>
+                    </section>
+                </div>
+            </main>
+        </div>
 
-            <!-- ROW 3 -->
-            <div class="flex flex-row justify-center mt-10 mb-5">
-                <section class="w-11/12 space-y-2">
-                    <div class="font-bold">Weather Forecast</div>
-                    <div class="h-56 bg-dark-moderate-cyan"></div>
-                </section>
-            </div>
-        </main>
     </body>
 
 </html>
